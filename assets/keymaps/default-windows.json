@@ -610,7 +610,7 @@
     "use_key_equivalents": true,
     "bindings": {
       "ctrl-k v": "markdown::OpenPreviewToTheSide",
-      "ctrl-shift-v": "markdown::OpenPreview",
+      "ctrl-shift-v": "preview::Toggle",
     },
   },
   {
@@ -618,7 +618,15 @@
     "use_key_equivalents": true,
     "bindings": {
       "ctrl-k v": "svg::OpenPreviewToTheSide",
-      "ctrl-shift-v": "svg::OpenPreview",
+      "ctrl-shift-v": "preview::Toggle",
+    },
+  },
+  {
+    "context": "Editor && extension == csv",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-k v": "csv::OpenPreviewToTheSide",
+      "ctrl-shift-v": "preview::Toggle",
     },
   },
   {
@@ -1344,6 +1352,7 @@
     "context": "MarkdownPreview",
     "use_key_equivalents": true,
     "bindings": {
+      "ctrl-shift-v": "preview::Toggle",
       "pageup": "markdown::ScrollPageUp",
       "pagedown": "markdown::ScrollPageDown",
       "up": "markdown::ScrollUp",
@@ -1354,6 +1363,20 @@
       "ctrl-end": "markdown::ScrollToBottom",
       "find": "buffer_search::Deploy",
       "ctrl-f": "buffer_search::Deploy",
+    },
+  },
+  {
+    "context": "SvgPreview",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-shift-v": "preview::Toggle",
+    },
+  },
+  {
+    "context": "CsvPreview",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-shift-v": "preview::Toggle",
     },
   },
   {
