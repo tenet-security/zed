@@ -41,7 +41,7 @@ pub struct SpawnAgentToolInput {
     pub label: String,
     /// The prompt for the agent. For new sessions, include full context needed for the task. For follow-ups (with session_id), you can rely on the agent already having the previous message.
     pub message: String,
-    /// Session ID of an existing agent session to continue instead of creating a new one. Omit to create a new subagent.
+    /// Session ID of an existing agent session to continue instead of creating a new one. Omit to create a new agent.
     #[serde(default, deserialize_with = "deserialize_session_id")]
     pub session_id: Option<acp::SessionId>,
 }
